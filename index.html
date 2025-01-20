@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de 10%</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cálculo de 10%</h1>
+
+        <label for="valor">Digite o valor:</label>
+        <input type="number" id="valor" placeholder="Exemplo: 100" oninput="atualizarValor()">
+        <span id="valorComAcrescimo" class="valor-destaque"></span>
+
+        <label for="formaPagamento">Forma de pagamento:</label>
+        <input type="text" id="formaPagamento" placeholder="C, D, V, M ou P" onkeypress="verificarEnter(event)">
+        <p class="legenda">Legenda: C - Crédito, D - Débito, V - Voucher, M - Dinheiro, P - Pix</p>
+
+        <button onclick="calcular()">Calcular</button>
+
+        <div id="historico">
+            <table id="tabelaHistorico">
+                <thead>
+                    <tr>
+                        <th>Valor Original</th>
+                        <th>Valor +10%</th>
+                        <th>Forma de Pagamento</th>
+                        <th>Hora</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Histórico será exibido aqui -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

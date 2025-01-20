@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Ajuste para alinhamento no topo */
+    height: 100vh;
+    overflow-y: scroll; /* Permite rolar a página */
+}
+
+.container {
+    background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    position: sticky; /* Fixar a posição até o botão de calcular */
+    top: 20px; /* Deixa um espaçamento do topo */
+    z-index: 100; /* Garante que fique acima de outros elementos */
+    margin-top: 0;
+}
+
+h1 {
+    color: #00bcd4;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    text-align: center;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #00bcd4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #008ba3;
+}
+
+.legenda {
+    font-size: 14px;
+    color: #cccccc;
+    margin-top: 5px;
+}
+
+#valorComAcrescimo {
+    font-size: 18px;
+    color: #00e676;
+    font-weight: bold;
+    margin-left: 10px;
+    background-color: #1b5e20;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#tabelaHistorico {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Adiciona espaço entre a área fixa e a tabela */
+    color: #ffffff;
+}
+
+#tabelaHistorico th, #tabelaHistorico td {
+    border: 1px solid #444;
+    padding: 8px;
+    text-align: center;
+}
+
+#tabelaHistorico th {
+    background-color: #333;
+    color: #00bcd4;
+}
+
+#tabelaHistorico td {
+    background-color: #222;
+}
+
+#tabelaHistorico button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#tabelaHistorico .editar {
+    background-color: #ff9800;
+    color: white;
+}
+
+#tabelaHistorico .excluir {
+    background-color: #f44336;
+    color: white;
+}
+
+#tabelaHistorico button:hover {
+    opacity: 0.8;
+}
